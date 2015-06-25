@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+</head>
+<body>
+	<input type='text'/>
+	<script>
+		// add the event listener to all textboxes on the page.
+		var inputs = document.getElementsByTagName('input');
+		alert('test');
+		for (var i = 0; i < inputs.length; i++)
+		{
+			if (inputs[i].type == 'text')
+			{
+				inputs[i].addEventListener('onkeydown', function(){
+					alert('test');
+				});
+			}
+		}
+	</script>
+</body>
+</html>

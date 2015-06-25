@@ -1,0 +1,1 @@
+web: gunicorn autocomplete:app --log-file=-
